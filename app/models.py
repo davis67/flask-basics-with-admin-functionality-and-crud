@@ -73,3 +73,12 @@ class Role(db.Model):
 
     def __repr__(self):
         return '<Role: {}>'.format(self.name)
+
+class Book(db.Model):
+    """
+    testing my forms
+    """
+    __tablename__ = 'tests'
+    title = db.Column(db.String(80), unique=True, nullable=False, primary_key=True)
+    def __repr__(self):
+        return "<Title: {}>".format(self.title)
